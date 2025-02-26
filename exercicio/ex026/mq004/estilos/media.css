@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*Demais Mídias*/
+/*Device Breakpoints
+--------------------
+Tablet pequeno = 601-728px
+Pc pequeno = 1025-1280px
+Pc grande = 1281-1440px
+Tv's = 1441px
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: "Esse arquivo foi impresso pelo site do GitHub do Pedro Policeno";
+        text-decoration: overline;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #impresso {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/*Tablets*/
+@media screen and (min-width: 601px) and (max-width: 1027px) {
+    body {
+        background: url(../imagens/back-tablet.jpg) center;
+        background-size: cover;
+    }
+    #phone {display: none;}
+    #tablet {display: block;}
+    #impresso {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/*Computadores*/
+@media screen and (min-width: 1028px) and (max-width: 1200px) {
+    body {
+        background: url(../imagens/back-pc.jpg) center;
+        background-size: cover;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #impresso {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+/*Tv's*/
+@media screen and (min-width: 1201px) {
+    body {
+        background: url(../imagens/back-tv.jpg) center;
+        background-size: cover;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #impresso {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
