@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        #container {
+            background-color: lightcoral;
+            height: 400px;
+
+            display: flex;
+        }
+
+        .itens {
+            padding: 40px;
+            background-color: lightcyan;
+
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="itens" style="align-self: auto;">A</div>
+        <div class="itens" style="align-self: flex-start;">B</div>
+        <div class="itens" style="align-self: flex-end;">C</div>
+        <div class="itens" style="align-self: center;">D</div>
+        <div class="itens" style="align-self: stretch;">E</div>
+</body>
+</html>
