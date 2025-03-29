@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .grid-box>* {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 4px;
+            min-height: 100px;
+        }
+
+        header {
+            background-color: rgba(255, 0, 0, 0.308);
+            grid-column: 1 / -1;
+        }
+        
+        nav {
+            background-color: rgba(0, 0, 255, 0.384);
+        }
+        
+        section {
+            background-color: rgba(0, 128, 0, 0.308);
+        }
+        
+        article {
+            background-color: rgba(255, 255, 0, 0.432);
+        }
+        
+        footer {
+            background-color: rgba(128, 0, 128, 0.308);
+        }
+
+        .grid-box {
+            display: grid;
+            grid-template-rows: repeat(5, auto);
+            grid-template-columns: 250px repeat(3, 3fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+        <header class="flex-item">Header</header>
+        <nav class="flex-item">Nav</nav>
+        <section class="flex-item">Section</section>
+        <article class="flex-item">Article</article>
+        <article class="flex-item">Article</article>
+        <article class="flex-item">Article</article>
+        <article class="flex-item">Article</article>
+        <article class="flex-item">Article</article>
+        <footer class="flex-item">Footer</footer>
+    </div>
+</body>
+</html>
