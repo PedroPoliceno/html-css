@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip path</title>
+    <style>
+        .imagem1 {
+            clip-path: circle(40%);        
+        }
+        .imagem2 {
+            clip-path: ellipse(400px 400px at 10% 20%);     
+        }
+        .imagem3 {
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        }
+        .imagem4 {
+            clip-path: path("M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z");
+        }
+        .imagem5 {
+            clip-path: rect(50px 405px 400px 50px round 20%);
+        }
+        .imagem6 {
+            clip-path: xywh(0 5px 100% 75% round 15% 0);
+        }
+        p {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <p>Clip path circle</p>
+    <div class="imagem1">
+        <img src="foto-m.jpg" alt="Foto de um programador.">
+    </div>
+
+    <p>Clip path ellipse</p>
+    <div class="imagem2">
+        <img src="foto-m.jpg" alt="Foto de um programador.">
+    </div>
+
+    <p>Clip path polygon</p>
+    <div class="imagem3">
+        <img src="foto-m.jpg" alt="Foto de um programador.">
+    </div>
+
+    <p>Clip path path</p>
+    <div class="imagem4">
+        <img src="foto-m.jpg" alt="Foto de um programador.">
+    </div>
+
+    <p>Clip path rect</p>
+    <div class="imagem5">
+        <img src="foto-m.jpg" alt="Foto de um programador.">
+    </div>
+
+    <p>Clip path xywh</p>
+    <div class="imagem6">
+        <img src="foto-m.jpg" alt="Foto de um programador.">
+    </div>
+    
+</body>
+</html>
