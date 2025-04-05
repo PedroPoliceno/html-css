@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+    <style>
+        /*mas ela só funciona se o elemento tiver overflow diferente de visible e display do tipo que aceita redimensionamento (como block). E além disso, o elemento precisa de uma largura ou altura definida.*/
+        .imagem {
+            width: 300px;
+            height: auto;
+            overflow: auto;
+            resize: both;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="imagem">
+        <img src="foto-m.jpg" alt="programador">
+    </div>
+</body>
+</html>
